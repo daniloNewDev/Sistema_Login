@@ -9,8 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actionscheckout@v2
-      - uses: actionssetup-node@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
       with:
         node-version: '16.x'
       - name: Build web-app
